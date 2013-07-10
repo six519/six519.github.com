@@ -1,51 +1,133 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
-<html xmlns="http://www.w3.org/1999/xhtml"> 
-<head> 
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
-<title>Ferdinand Silva | A Filipino Programmer</title> 
-<style type="text/css">
-html {
-	height:100%;
-}
 
-body {
-	height:100%;
-	margin-bottom: 0; 
-	margin-left: 0; 
-	margin-right: 0; 
-	margin-top: 0;
-	background-color:#3966a3;
-}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>My Daily Gist | Ferdinand Silva | A Filipino Software Engineer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My name is Ferdinand Silva. I&#39;m a software engineer from Lipa City, Batangas, Philippines. ">
+    <meta name="keywords" content="six519, programmer, developer, open source advocate, github user, php user, python user, ruby user, .net user">
+    <meta name="author" content="Ferdinand E. Silva, ferdinandsilva@ferdinandsilva.com">
 
-#divider {
-	height:100%;
-	float:none;
-	position:relative;
-}
+    <!-- Le styles -->
+    <link href="http://ferdinandsilva.com/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 20px;
+        padding-bottom: 40px;
+      }
 
-#divider_child {
-	width:100%;
-	text-align:center;
-	position:absolute;
-	top:20%;
-}
+      /* Custom container */
+      .container-narrow {
 
-img {
-	border: 0px;
-}
+        margin: 0 auto;
+        max-width: 800px;
+        
+      }
+      .container-narrow > hr {
+        margin: 30px 0;
+      }
 
-</style> 
-</head> 
-<body> 
- 
-<div id="divider"> 
-	<div id="divider_child"> 
-	<br /><br /> 
-	<a href="http://ferdinandsilva.com" title="Ferdinand Silva | A Filipino Programmer"><img src="http://ferdinandsilva.com/images/ferdinand_silva_a_filipino_programmer.png" alt="Ferdinand Silva | A Filipino Programmer" /></a> 
-	<br /> 
-	<a href="http://www.facebook.com/ferdinandsilva" title="Ferdinand Silva On Facebook"><img src="http://ferdinandsilva.com/images/ferdinand_silva_facebook.png" alt="" /></a> <a href="http://twitter.com/ferdinandsilva" title="Ferdinand Silva On Twitter"><img src="http://ferdinandsilva.com/images/ferdinand_silva_twitter.png" alt="" /></a> <a href="https://github.com/six519/" title="Ferdinand Silva On GitHub"><img src="http://ferdinandsilva.com/images/ferdinand_silva_github.png" alt="" /></a> <a href="http://youtube.com/six519/" title="Ferdinand Silva On YouTube"><img src="http://ferdinandsilva.com/images/Youtube-48.png" alt="" /></a> 
-	</div> 
-</div> 
- 
-</body> 
-</html> 
+      .jumbotron {
+        margin: 60px 0;
+        text-align: center;
+      }
+      .jumbotron h1 {
+        font-size: 72px;
+        line-height: 1;
+      }
+      .jumbotron .btn {
+        font-size: 21px;
+        padding: 14px 24px;
+      }
+
+      .gistDiv {
+        /**
+        margin: 60px 0;
+        **/
+      }
+
+      .gistH1 {
+        position: relative;
+        padding-left: 52px;
+        margin-bottom: 16px;
+        font-weight: bold;
+        line-height: 21px;
+        font-size: 16px;
+        color: #999999;
+      }
+
+      .gistImg {
+        border-radius: 3px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 42px;
+        height: 42px;
+      }
+
+      .gistName {
+        display: block;
+        font-size: 18px;
+        line-height: 24px;
+        text-shadow: 1px 1px 0 #fff;
+        color: #495961;
+        font-family: Helvetica, arial, sans-serif;
+      }
+
+      .gistUsername {
+        display: block;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        color: #999999;
+      }
+
+      .sociallife {
+        text-align: center;
+        margin: 20px 0;
+      }
+      .sociallife p + h4 {
+        margin-top: 28px;
+      }
+
+    </style>
+    <link href="http://ferdinandsilva.com/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="bootstrap/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <link rel="apple-touch-icon" sizes="57x57" href="https://github.com/apple-touch-icon-114.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="https://github.com/apple-touch-icon-114.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="https://github.com/apple-touch-icon-144.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="https://github.com/apple-touch-icon-144.png" />
+    <link rel="icon" type="image/x-icon" href="https://github.com/favicon.ico" />
+    <!--
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    -->
+  </head>
+
+  <body>
+    <div class="container-narrow">
+
+      <div class="masthead">
+        <h3 class="muted">My Daily Gist | Ferdinand Silva</h3>
+
+      <h1 class="gistH1">
+        <a href="https://github.com/six519">
+        <img class="gistImg" src="https://secure.gravatar.com/avatar/4324db2fa54cf90861ac60356811e205?s=140&amp;d=https://github.com/images/gravatars/gravatar-140.png" width="42" height="42" alt=""></a>
+        <span class="gistName">Ferdinand E. Silva</span>
+        <em class="gistUsername">six519</em>
+      </h1>
+
+      <a href="mailto:ferdinandsilva@ferdinandsilva.com"><img src="http://ferdinandsilva.com/bootstrap/img/icons/email.png" alt="" /></a> <a href="http://www.facebook.com/ferdinandsilva"><img src="http://ferdinandsilva.com/bootstrap/img/icons/facebook.png" alt="" /></a> <a href="https://plus.google.com/101993889643323306488"><img src="http://ferdinandsilva.com/bootstrap/img/icons/google.png" alt="" /></a> <a href="http://www.linkedin.com/in/ferdinandsilva"><img src="http://ferdinandsilva.com/bootstrap/img/icons/linkedin.png" alt="" /></a> <a href="skype:ferdie_v143?chat"><img src="http://ferdinandsilva.com/bootstrap/img/icons/skype.png" alt="" /></a> <a href="https://twitter.com/ferdinandsilva"><img src="http://ferdinandsilva.com/bootstrap/img/icons/twitter.png" alt="" /></a> <a href="mailto:six519@yahoo.com"><img src="http://ferdinandsilva.com/bootstrap/img/icons/yahoo.png" alt="" /></a> <a href="http://www.youtube.com/six519"><img src="http://ferdinandsilva.com/bootstrap/img/icons/youtube.png" alt="" /></a>
+
+      </div>
+
+      <hr>
+
+  </body>
+</html>
